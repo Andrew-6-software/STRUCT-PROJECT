@@ -1,0 +1,6 @@
+MyInstruments: instruments.o
+	gcc -o MyInstruments main.o
+instruments.o: instruments.c
+	gcc -c instruments.c
+clean:
+	rm MyInstruments*.o
